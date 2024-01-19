@@ -1,0 +1,420 @@
+:root {
+	--anim: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	outline: none;
+}
+
+img {
+	display: block;
+}
+
+body {
+	box-sizing: border-box;
+	font-family: Poppins;
+}
+
+.sidebar {
+	float: left;
+	box-shadow: 0px 10px 60px 0px rgba(226, 236, 249, 0.50);
+	height: 1200px;
+	width: 320px;
+	position: relative;
+}
+
+.sidebar-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.sidebar-main {
+	padding-top: 36px;
+	padding-left: 28px;
+}
+
+.sidebar-main__link {
+	display: flex;
+	align-items: center;
+	fill: #000;
+	color: #000;
+	font-size: 26px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	letter-spacing: 0.26px;
+	transition: fill var(--anim), color var(--anim);
+	position: relative;
+}
+
+.sidebar-main__link:hover,
+.sidebar-main__link:focus>.svg-icon:hover,
+.svg-icon:focus {
+	fill: #5932EA;
+	color: #5932EA;
+}
+
+
+.sidebar-main__version {
+	color: #838383;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	letter-spacing: -0.1px;
+	margin-top: 10px;
+	margin-left: 6px;
+}
+
+.sidebar__list {
+	display: flex;
+	flex-direction: column;
+	padding-left: 28px;
+	gap: 15px;
+}
+
+.sidebar__list__item {
+	display: flex;
+	align-items: center;
+	background-color: transparent;
+	fill: #9197B3;
+	gap: 14px;
+	width: 250px;
+}
+
+
+.sidebar__list__text {
+	color: #9197B3;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	letter-spacing: -0.14px;
+	margin-left: 11px;
+}
+
+.text {
+	padding-left: 11px;
+	gap: 0;
+	margin-top: 43px;
+}
+
+.sidebar__list__link {
+	color: #9197B3;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	letter-spacing: -0.14px;
+	display: flex;
+	align-items: center;
+	gap: 14px;
+	width: 250px;
+	padding: 11px;
+}
+
+.sidebar__list__link:hover,
+.sidebar__list__link:focus {
+	text-decoration: underline;
+}
+
+.current {
+	background-color: #5932EA;
+	color: #FFF;
+	border-radius: 8px;
+}
+
+
+.sidebar__footer {
+	position: absolute;
+	left: 28px;
+	bottom: 76px;
+}
+
+.sidebar__footer__link {
+	display: flex;
+	flex-direction: row;
+	gap: 12px;
+}
+
+
+
+.sidebar__footer-name {
+	color: #000;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	letter-spacing: 0.14px;
+	display: flex;
+	flex-direction: column;
+}
+
+.sidebar__footer-position {
+	color: #757575;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	letter-spacing: 0.12px;
+}
+
+
+
+.main-content {
+	display: flex;
+	align-items: center;
+	background: #FAFBFF;
+	padding-left: 71px;
+}
+
+.main-content__hero {
+	padding-top: 41px;
+	padding-bottom: 51px;
+}
+
+.main-content-container {
+	background-color: #fff;
+	border-radius: 3%;
+	padding-left: 38px;
+	padding-top: 30px;
+	filter: drop-shadow(0px 10px 60px rgba(226, 236, 249, 0.50));
+	padding-bottom: 40px;
+	padding-right: 40px;
+}
+
+.main-content__top {
+	display: flex;
+	gap: 500px;
+}
+
+.main-content__input {
+	border: transparent;
+	border-radius: 10px;
+	background: #F9FBFF;
+	width: 216px;
+	height: 38px;
+	padding-left: 8px;
+}
+
+.main-content__top__title {
+	color: #000;
+
+	font-size: 22px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	letter-spacing: -0.22px;
+}
+
+
+.main-content__top__text {
+	color: #16C098;
+
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	letter-spacing: -0.14px;
+}
+
+.main-content__footer {
+	display: flex;
+	margin-top: 30px;
+	justify-content: space-between;
+}
+
+.main-content__footer__text {
+	color: #B5B7C0;
+
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	letter-spacing: -0.14px;
+}
+
+/* Pagination */
+.pagination_section {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	gap: 12px;
+}
+
+/* pagination styling */
+.pagination_section a {
+	color: black;
+	padding: 6px 10px;
+	text-decoration: none;
+	border-radius: 4px;
+	border: 1px solid #EEE;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 100%;
+	/* 12px */
+	letter-spacing: -0.12px;
+	background: #F5F5F5;
+
+
+}
+
+/* pagination hover effect on non-active */
+.pagination_section a:hover:not(.active) {
+	background-color: #031F3B;
+	color: white;
+
+}
+
+/* pagination hover effect on active*/
+
+a:nth-child(2) {
+	background-color: #5932EA;
+	color: #FFF;
+}
+
+
+
+.content {
+	margin: 50px;
+	padding: 15px;
+	width: 700px;
+	height: 200px;
+	border: 2px solid black;
+}
+
+
+/* TABLE */
+table {
+	border-collapse: collapse;
+	text-align: left;
+	width: 888px;
+	margin-top: 49px;
+}
+
+table tr {
+	border-bottom: 1px solid #EEE;
+}
+
+
+table td {
+	padding: 24px 20px;
+}
+
+table th {
+	padding-bottom: 14px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+.thead-text:first-child,
+.tbody-text:first-child {
+	padding-left: 0;
+}
+
+
+.thead-text {
+	color: #B5B7C0;
+
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	letter-spacing: -0.14px;
+}
+
+.tbody-text {
+	color: #292D32;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	letter-spacing: -0.14px;
+}
+
+.tbody-text--active {
+	color: #008767;
+	border-radius: 4px;
+	border: 1px solid #00B087;
+	background: rgba(22, 192, 152, 0.38);
+	padding: 4px 18px;
+	text-align: center;
+	width: 40px;
+}
+
+.tbody-text--inactive {
+	border-radius: 4px;
+	border: 1px solid #DF0404;
+	background: #FFC5C5;
+	color: #DF0404;
+	padding: 4px 12px;
+	text-align: center;
+	width: 40px;
+}
+
+/* Simple CSS for flexbox table on mobile */
+@media(max-width: 800px) {
+	table thead {
+		left: -9999px;
+		position: absolute;
+		visibility: hidden;
+	}
+
+	table tr {
+		border-bottom: 0;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		margin-bottom: 40px;
+	}
+
+	table td {
+		border: 1px solid;
+		margin: 0 -1px -1px 0;
+		padding-top: 35px;
+		position: relative;
+		width: 50%;
+	}
+
+	table td span {
+		display: block;
+	}
+}
+
+/* SEARCH ICON */
+
+.main-content__label {
+	position: relative;
+}
+
+.main-content__label:before {
+	content: "";
+	position: absolute;
+	left: 8px;
+	top: 0;
+	bottom: 0;
+	width: 20px;
+	background: url("../images/search.png") center / contain no-repeat;
+}
+
+.main-content__input {
+	padding: 10px 30px;
+	color: #B5B7C0;
+	padding-left: 40px;
+}
